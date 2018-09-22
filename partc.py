@@ -38,7 +38,6 @@ def total_procurement_dictionary1():
 print total_procurement_dictionary1()
 
 def sorter():
-    global sorted_total_procurement_dictionary
     choice=raw_input("Would you like to see procurement amount in ascending or descending order?")
     if choice.lower() == "ascending":
         sorted_total_procurement_dictionary= sorted(total_procurement_dictionary.items(), key=operator.itemgetter(1) ,reverse=False)
