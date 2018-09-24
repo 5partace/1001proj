@@ -7,6 +7,7 @@ total_procurement_dictionary={}
 #this function is to store all values of categories and awarded amount into a dictionary
 def procurement_dictionary1():
     count=0
+    string=""
     global procurement_dictionary
     with open(procurement1,"r") as csvfile:
         reader=csv.reader(csvfile)
