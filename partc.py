@@ -19,7 +19,10 @@ def procurement_dictionary1():
                 #creating a dictionary where the values to a key is stored in a list, so for each similar string the value will be appended to that list.
             else:
                 count +=1
-        return procurement_dictionary
+        for rows,value in procurement_dictionary.iteritems():
+            string = string + rows + ": " +str(value)+ "\n"
+        return string
+        #return procurement_dictionary
 
 #this function is to fiind total procurement value for each category, not individual values but total
 def total_procurement_dictionary1():
